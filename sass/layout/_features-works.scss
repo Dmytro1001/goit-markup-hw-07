@@ -32,16 +32,14 @@
 
 .work-features__title {
     font-weight: 700;
-    font-size: 14px;
-    line-height: 1.14;
+    @include font(14px, 16px);
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: var(--primary-color-text);
 }
 
 .work-features__text {
-    font-size: 14px;
-    line-height: 1.71;
+    @include font(14px, 24px);
     letter-spacing: 0.03em;
     color: var(--secondary-color-text);
     }

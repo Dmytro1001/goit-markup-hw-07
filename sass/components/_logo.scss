@@ -3,8 +3,7 @@
 
     font-family: var(--secondary-font-text);
     font-weight: 700;
-    font-size: 26px;
-    line-height: 1.19;
+    @include font(26px, 31px);
     letter-spacing: 0.03em;
     color: var(--logo-color-light-background);
 }

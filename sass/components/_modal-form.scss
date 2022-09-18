@@ -6,8 +6,7 @@
 
 .modal-window__title {
     font-weight: 700;
-    font-size: 20px;
-    line-height: 1.15;
+    @include font(20px, 23px);
     text-align: center;
     letter-spacing: 0.03em;
     margin-bottom: 12px;
@@ -22,8 +21,7 @@
 .modal-window__label-text {
     display: block;
     margin-bottom: 4px;
-    font-size: 12px;
-    line-height: 1.17;
+    @include font(12px, 14px);
     letter-spacing: 0.01em;
 
     color: var(--secondary-color-text);
@@ -83,8 +81,7 @@
     }
 
     &::placeholder {
-        font-size: 12px;
-        line-height: 1.17;
+        @include font(12px, 14px);
         letter-spacing: 0.01em;
         color: rgba(117, 117, 117, 0.5);
     }
@@ -95,6 +92,10 @@
 .modal-window__label-checkbox {
     @extend %align;
     margin-bottom: 30px;
+    @include font(14px, 24px);
+    letter-spacing: 0.03em;
+
+    color: #757575;
 }
 
 .modal-window__checkbox {
@@ -119,20 +120,9 @@
         border-color: transparent;
     }
 
-    .modal-window__:focus + & {
+    .modal-window__checkbox:focus + & {
     box-shadow: 0 0 0 2px rgba(0, 0, 0, 0.8);
 }
-}
-
-
-
-
-.modal-window__label-checkbox {
-    font-size: 14px;
-    line-height: 1.71;
-    letter-spacing: 0.03em;
-
-    color: #757575;
 }
 
 .modal-window__checkbox-link {
@@ -143,8 +133,7 @@
 .modal-window__submit-btn {
     font-family: inherit;
     font-weight: 700;
-    font-size: 16px;
-    line-height: 1.88;
+    @include font(16px, 30px);
     display: block;
     align-items: center;
     text-align: center;

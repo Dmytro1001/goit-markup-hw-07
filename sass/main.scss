@@ -1,23 +1,8 @@
-@import './utils/variables';
-@import './utils/placeholders';
-@import './utils/visually-hidden';
+@import './utils/utils-main';
 
-@import './base/common';
-@import './base/sections';
-@import './base/container';
+@import './base/base-main';
 
-@import './components/logo';
-@import './components/title';
-@import './components/link-social-media';
-@import './components/backdrop';
-@import './components/modal-window';
-@import './components/modal-form';
+@import './components/components-main';
 
+@import './layout/layout-main';
 
-@import './layout/header';
-@import './layout/hero';
-@import './layout/features-works';
-@import './layout/works';
-@import './layout/our-team';
-@import './layout/regular-customers';
-@import './layout/footer';
