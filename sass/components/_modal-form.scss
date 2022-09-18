@@ -1,10 +1,10 @@
-.form-list {
+.modal-window__form {
     display: flex;
     flex-direction: column;
 
 }
 
-.modal-form-title {
+.modal-window__title {
     font-weight: 700;
     font-size: 20px;
     line-height: 1.15;
@@ -15,11 +15,11 @@
     color: var(--primary-color-text);
 }
 
-.modal-form-field-lab {
+.modal-window__label {
     margin-bottom: 10px;
 }
 
-.modal-form-field-desc {
+.modal-window__label-text {
     display: block;
     margin-bottom: 4px;
     font-size: 12px;
@@ -29,12 +29,12 @@
     color: var(--secondary-color-text);
 }
 
-.modal-form-input-wrapper {
+.modal-window__input-wrapper {
     position: relative;
     display: block;
 }
 
-.modal-form-input {
+.modal-window__input {
     width: 100%;
     height: 40px;
     padding-left: 42px;
@@ -42,15 +42,14 @@
     border: 1px solid rgba(33, 33, 33, 0.2);
     border-radius: 4px;
     transition: border-color var(--transition-duration-timing-func);
+
+    &:focus {
+        outline: none;
+        border-color: var(--active-color-hover-focus);
+    }
 }
 
-.modal-form-input:focus,
-.modal-form-comment:focus {
-    outline: none;
-    border-color: var(--active-color-hover-focus);
-}
-
-.input-placeholder-icon {
+.modal-window__input-icon {
     position: absolute;
     top: 50%;
     left: 12px;
@@ -58,17 +57,17 @@
     width: 18px;
     height: 18px;
     transition: fill var(--transition-duration-timing-func);
+
+    .modal-window__input:focus + & {
+        fill: var(--active-color-hover-focus)
+    }
 }
 
-.modal-form-input:focus+.input-placeholder-icon {
-    fill: var(--active-color-hover-focus)
-}
-
-.modal-form-field-com {
+.modal-window__label-comment {
     margin-bottom: 20px;
 }
 
-.modal-form-comment {
+.modal-window__textarea {
     width: 100%;
     height: 120px;
     padding: 12px 16px;
@@ -77,40 +76,35 @@
     border-radius: 4px;
     resize: none;
     transition: border-color var(--transition-duration-timing-func);
+
+    &:focus {
+        outline: none;
+        border-color: var(--active-color-hover-focus);
+    }
+
+    &::placeholder {
+        font-size: 12px;
+        line-height: 1.17;
+        letter-spacing: 0.01em;
+        color: rgba(117, 117, 117, 0.5);
+    }
 }
 
-.modal-form-comment::placeholder {
-    font-size: 12px;
-    line-height: 1.17;
-    letter-spacing: 0.01em;
-    color: rgba(117, 117, 117, 0.5);
-}
 
-.modal-form-field-checkbox {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+
+.modal-window__label-checkbox {
+    @extend %align;
     margin-bottom: 30px;
 }
 
-.modal-form-checkbox {
+.modal-window__checkbox {
     position: absolute;
     -moz-appearance: none;
     -webkit-appearance: none;
     appearance: none;
 }
 
-.modal-form-check-bord {
-    width: 16px;
-    height: 15px;
-    margin-right: 7px;
-    border: 1px solid var(--black-text);
-    border-radius: 3px;
-    cursor: pointer;
-
-}
-
-.modal-form-checkbox-icon {
+.modal-window__checkbox-icon {
     width: 16px;
     height: 15px;
     margin-right: 7px;
@@ -119,18 +113,21 @@
     cursor: pointer;
 
     transition: background-color var(--transition-duration-timing-func), border-color var(--transition-duration-timing-func);
-}
 
-.modal-form-checkbox:checked+.modal-form-checkbox-icon {
-    background-color: var(--active-color-hover-focus);
-    border-color: transparent;
-}
+    .modal-window__checkbox:checked + & {
+        background-color: var(--active-color-hover-focus);
+        border-color: transparent;
+    }
 
-.modal-form-checkbox:focus+.modal-form-checkbox-icon {
+    .modal-window__:focus + & {
     box-shadow: 0 0 0 2px rgba(0, 0, 0, 0.8);
 }
+}
 
-.modal-form-field-checkbox {
+
+
+
+.modal-window__label-checkbox {
     font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.03em;
@@ -138,12 +135,12 @@
     color: #757575;
 }
 
-.checkbox-link {
+.modal-window__checkbox-link {
     text-decoration-line: underline;
     color: var(--active-color-hover-focus);
 }
 
-.submit-btn {
+.modal-window__submit-btn {
     font-family: inherit;
     font-weight: 700;
     font-size: 16px;
@@ -162,10 +159,11 @@
     padding: 10px 52px;
 
     transition: background-color var(--transition-duration-timing-func), box-shadow var(--transition-duration-timing-func);
+
+    &:hover,
+    &:focus {
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+        border-radius: 4px;
+    }
 }
 
-.submit-btn:hover,
-.submit-btn:focus {
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-    border-radius: 4px;
-}

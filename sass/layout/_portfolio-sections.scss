@@ -1,11 +1,10 @@
-.portfolio-container {
+.container-portfolio {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-.portfolio-title,
-.project-title {
+.page-portfolio__title {
     font-weight: 700;
     font-size: 36px;
     line-height: 1.17;
@@ -14,7 +13,7 @@
     color: var(--primary-color-text);
 }
 
-.portfolio-btn-items {
+.page-portfolio__btn-items {
     display: flex;
     flex-wrap: wrap;
     gap: 8px;

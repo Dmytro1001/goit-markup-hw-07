@@ -14,14 +14,12 @@
     transition: transform var(--transition-duration-timing-func);
 }
 
-.btn-close-modal-window {
+.modal-window__btn--close {
     position: absolute;
     top: 8px;
     right: 8px;
 
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @extend %align;
     width: 30px;
     height: 30px;
     border-radius: 50%;
@@ -32,15 +30,15 @@
     padding: 0;
 
     transition: color var(--transition-duration-timing-func);
+
+    &:hover,
+    &:focus {
+        color: var(--active-color-hover-focus);
+    }
 }
 
-.btn-close-icon {
+.modal-window__btn-icon {
     width: 18px;
     height: 18px;
     fill: currentColor
-}
-
-.btn-close-modal-window:hover,
-.btn-close-modal-window:focus {
-    color: var(--active-color-hover-focus);
 }

@@ -1,14 +1,10 @@
-.clients-items {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.clients__items {
+    @extend %align;
     gap: 30px;
 }
 
 .company-link {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @extend %align;
     width: 170px;
     height: 92px;
     border: 1px solid var(--primery-icon-color);
@@ -17,6 +13,12 @@
 
     transition: color var(--transition-duration-timing-func),
         border-color var(--transition-duration-timing-func);
+
+    &:hover,
+    &:focus {
+        color: var(--active-color-hover-focus);
+        border-color: var(--active-color-hover-focus);
+    }
 }
 
 .company-icon {
@@ -25,8 +27,3 @@
     fill: currentColor
 }
 
-.company-link:hover,
-.company-link:focus {
-    color: var(--active-color-hover-focus);
-    border-color: var(--active-color-hover-focus);
-}
