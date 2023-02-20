@@ -100,7 +100,7 @@ body {
   font-family: var(--secondary-font-text);
   font-weight: 700;
   font-size: 26px;
-  line-height: 1.1923076923;
+  line-height: calc 1.1923076923;
   letter-spacing: 0.03em;
   color: var(--logo-color-light-background);
 }
@@ -112,7 +112,7 @@ body {
 .section-title {
   font-weight: 700;
   font-size: 36px;
-  line-height: 1.1666666667;
+  line-height: calc 1.1666666667;
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--primary-color-text);
@@ -124,16 +124,16 @@ body {
 }
 
 .social-link {
-  width: 44px;
-  height: 44px;
+  width: 34px;
+  height: 34px;
   border-radius: 50%;
   color: var(--primery-icon-color);
   transition: color var(--transition-duration-timing-func), background-color var(--transition-duration-timing-func);
 }
 
 .social-logo {
-  width: 20px;
-  height: 20px;
+  width: 34px;
+  height: 34px;
   fill: currentColor;
 }
 
@@ -211,7 +211,7 @@ body {
 .modal-window__title {
   font-weight: 700;
   font-size: 20px;
-  line-height: 1.15;
+  line-height: calc 1.15;
   text-align: center;
   letter-spacing: 0.03em;
   margin-bottom: 12px;
@@ -226,7 +226,7 @@ body {
   display: block;
   margin-bottom: 4px;
   font-size: 12px;
-  line-height: 1.1666666667;
+  line-height: calc 1.1666666667;
   letter-spacing: 0.01em;
   color: var(--secondary-color-text);
 }
@@ -281,7 +281,7 @@ body {
 }
 .modal-window__textarea::placeholder {
   font-size: 12px;
-  line-height: 1.1666666667;
+  line-height: calc 1.1666666667;
   letter-spacing: 0.01em;
   color: rgba(117, 117, 117, 0.5);
 }
@@ -289,7 +289,7 @@ body {
 .modal-window__label-checkbox {
   margin-bottom: 30px;
   font-size: 14px;
-  line-height: 1.7142857143;
+  line-height: calc 1.7142857143;
   letter-spacing: 0.03em;
   color: #757575;
 }
@@ -315,7 +315,7 @@ body {
   border-color: transparent;
 }
 .modal-window__checkbox:focus + .modal-window__checkbox-icon {
-  box-shadow: 0 0 0 2px rgba(0, 0, 0, 0.8);
+  box-shadow: 0 0 0 2px rgba(33, 150, 243, 0.8);
 }
 
 .modal-window__checkbox-link {
@@ -327,7 +327,7 @@ body {
   font-family: inherit;
   font-weight: 700;
   font-size: 16px;
-  line-height: 1.875;
+  line-height: calc 1.875;
   display: block;
   align-items: center;
   text-align: center;
@@ -344,90 +344,6 @@ body {
 .modal-window__submit-btn:hover, .modal-window__submit-btn:focus {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
-}
-
-.page-header {
-  border-bottom: 1px solid var(--border-color);
-}
-
-.container-page-header {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-
-.menu {
-  display: flex;
-  align-items: center;
-}
-
-.menu__items {
-  display: flex;
-}
-
-.menu__nav {
-  display: block;
-  padding-top: 32px;
-  padding-bottom: 32px;
-}
-
-.menu__item:not(:last-child) {
-  margin-right: 50px;
-}
-
-.menu__nav {
-  position: relative;
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.1428571429;
-  letter-spacing: 0.02em;
-  color: var(--primary-color-text);
-  transition: color var(--transition-duration-timing-func);
-}
-.menu__nav:hover, .menu__nav:focus {
-  color: var(--active-color-hover-focus);
-}
-
-.menu__nav--current {
-  color: var(--active-color-hover-focus);
-}
-.menu__nav--current::after {
-  content: "";
-  position: absolute;
-  left: 0;
-  bottom: -1px;
-  display: block;
-  width: 100%;
-  height: 4px;
-  background-color: var(--active-color-hover-focus);
-  border-radius: 2px;
-}
-
-.menu__items--end {
-  margin-left: auto;
-}
-
-.menu__nav-contact {
-  color: var(--secondary-color-text);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.mail-icon,
-.phone-icon {
-  fill: currentColor;
-  margin-right: 10px;
-}
-
-.mail-icon {
-  width: 16px;
-  height: 12px;
-}
-
-.phone-icon {
-  width: 10px;
-  height: 16px;
 }
 
 .section-hero {
@@ -447,7 +363,7 @@ body {
 .hero-title {
   font-weight: 900;
   font-size: 44px;
-  line-height: 1.3636363636;
+  line-height: calc 1.3636363636;
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
@@ -462,7 +378,7 @@ body {
   font-family: inherit;
   font-weight: 700;
   font-size: 16px;
-  line-height: 1.875;
+  line-height: calc 1.875;
   display: block;
   align-items: center;
   text-align: center;
@@ -511,7 +427,7 @@ body {
 .work-features__title {
   font-weight: 700;
   font-size: 14px;
-  line-height: 1.1428571429;
+  line-height: calc 1.1428571429;
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--primary-color-text);
@@ -519,7 +435,7 @@ body {
 
 .work-features__text {
   font-size: 14px;
-  line-height: 1.7142857143;
+  line-height: calc 1.7142857143;
   letter-spacing: 0.03em;
   color: var(--secondary-color-text);
 }
@@ -547,7 +463,7 @@ body {
   background-color: var(--background-color-text-in-img);
   font-weight: 700;
   font-size: 14px;
-  line-height: 1.1428571429;
+  line-height: calc 1.1428571429;
   text-align: center;
   letter-spacing: 0.03em;
   text-transform: uppercase;
@@ -581,7 +497,7 @@ body {
 .team__name {
   font-weight: 500;
   font-size: 16px;
-  line-height: 1.1875;
+  line-height: calc 1.1875;
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--primary-color-text);
@@ -590,7 +506,7 @@ body {
 
 .team__prof {
   font-size: 16px;
-  line-height: 1.1875;
+  line-height: calc 1.1875;
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--secondary-color-text);
@@ -650,7 +566,7 @@ body {
 .page-footer__contact {
   font-style: normal;
   font-size: 14px;
-  line-height: 1.7142857143;
+  line-height: calc 1.7142857143;
   letter-spacing: 0.03em;
   color: var(--text-color-dark-background);
   transition: color var(--transition-duration-timing-func);
@@ -671,7 +587,7 @@ body {
 .page-footer__text {
   font-weight: 700;
   font-size: 14px;
-  line-height: 1.1428571429;
+  line-height: calc 1.1428571429;
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--text-color-dark-background);
@@ -699,7 +615,7 @@ body {
   margin-bottom: 20px;
   font-weight: 700;
   font-size: 14px;
-  line-height: 1.1428571429;
+  line-height: calc 1.1428571429;
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--text-color-dark-background);
@@ -709,7 +625,7 @@ body {
   width: 358px;
   padding: 15px 16px;
   font-size: 16px;
-  line-height: 1.25;
+  line-height: calc 1.25;
   display: flex;
   align-items: center;
   letter-spacing: 0.03em;
@@ -723,7 +639,7 @@ body {
 .btn-subscription {
   font-weight: 700;
   font-size: 16px;
-  line-height: 1.875;
+  line-height: calc 1.875;
   letter-spacing: 0.06em;
   padding: 10px 28px;
   margin-left: 10px;
@@ -763,7 +679,7 @@ body {
   font-family: inherit;
   font-weight: 500;
   font-size: 16px;
-  line-height: 1.625;
+  line-height: calc 1.625;
   text-align: center;
   letter-spacing: 0.03em;
   cursor: pointer;
@@ -814,7 +730,7 @@ body {
   height: 100%;
   padding: 63px 23px;
   font-size: 18px;
-  line-height: 1.5555555556;
+  line-height: calc 1.5555555556;
   letter-spacing: 0.03em;
   color: var(--text-color-dark-background);
   background-color: var(--active-bgcolor-block-info);
@@ -834,7 +750,7 @@ body {
 .page-portfolio__name-work {
   font-weight: 700;
   font-size: 18px;
-  line-height: 2;
+  line-height: calc 2;
   letter-spacing: 0.06em;
   color: var(--primary-color-text);
   margin-bottom: 4px;
@@ -842,7 +758,7 @@ body {
 
 .page-portfolio__type-work {
   font-size: 16px;
-  line-height: 1.875;
+  line-height: calc 1.875;
   letter-spacing: 0.03em;
   color: var(--secondary-color-text);
 }
